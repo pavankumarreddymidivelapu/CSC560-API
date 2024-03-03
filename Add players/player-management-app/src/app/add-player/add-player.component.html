@@ -1,0 +1,7 @@
+<!-- src/app/add-player/add-player.component.html -->
+<form (ngSubmit)="addPlayer()">
+    <label for="playerName">Player Name:</label>
+    <input id="playerName" type="text" [(ngModel)]="playerName" required>
+    <button type="submit">Add Player</button>
+  </form>
+  

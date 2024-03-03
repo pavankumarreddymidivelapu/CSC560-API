@@ -1,0 +1,9 @@
+<!-- src/app/update-player/update-player.component.html -->
+<form (ngSubmit)="updatePlayer()">
+    <label for="playerId">Player ID:</label>
+    <input id="playerId" type="number" [(ngModel)]="playerId" required>
+    <label for="playerName">New Player Name:</label>
+    <input id="playerName" type="text" [(ngModel)]="playerName" required>
+    <button type="submit">Update Player</button>
+  </form>
+  

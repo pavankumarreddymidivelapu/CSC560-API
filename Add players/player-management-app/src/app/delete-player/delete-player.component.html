@@ -1,0 +1,7 @@
+<!-- src/app/delete-player/delete-player.component.html -->
+<form (ngSubmit)="deletePlayer()">
+    <label for="playerId">Player ID:</label>
+    <input id="playerId" type="number" [(ngModel)]="playerId" required>
+    <button type="submit">Delete Player</button>
+  </form>
+  
