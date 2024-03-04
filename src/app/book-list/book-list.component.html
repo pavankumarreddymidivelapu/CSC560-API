@@ -1,0 +1,10 @@
+<!-- src/app/book-list/book-list.component.html -->
+<div *ngFor="let book of books">
+    <h3>{{ book.title }}</h3>
+    <p><strong>Author:</strong> {{ book.author }}</p>
+    <p><strong>Genre:</strong> {{ book.genre }}</p>
+    <p><strong>Year:</strong> {{ book.year }}</p>
+    <a [routerLink]="['/book', book._id]">View Details</a>
+    <hr />
+  </div>
+  
